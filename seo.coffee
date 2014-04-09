@@ -64,7 +64,7 @@ SEO =
 @SEO = SEO
 
 # IR before hooks
-Router.before -> SEO.clearAll()
+Router.onBeforeAction -> SEO.clearAll()
 
 getCurrentRouteName = ->
   router = Router.current()
